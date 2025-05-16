@@ -1,0 +1,5 @@
+homepage: "https://webepartners.pl/"
+documentation: "https://webepartners.pl/"
+versions:
+  - sha: 6f8ad0594e4c6654beb84a33b364cfd9e329dcb5
+    changeNotes: Initial Version
