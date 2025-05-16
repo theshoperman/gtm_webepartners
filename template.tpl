@@ -20,7 +20,7 @@ ___INFO___
     "displayName": "",
     "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAWJAAAFiQFtaJ36AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANSSURBVHgB1VdNSFRRFD4zjGTTCE9iyv7wIQWlkGNhGYVMUJGtFKFNhOPShWkEQRRou2gV0iKCSNta5KqECqcMWhTMa6FGLRrBNJyF5ozjqOntnHkzd+779c04EH5wePedc979vnvfvefdB/Cf4conmTEm4aUZrRZNRpOEsIL2FS3scrmiUEwgcRBthDkH5YZgs8BO5DyJ9YhQH1AI8ME2tDm2eVAf3fmS97Dio8cpeZdhCCuzLPInzCbin9nS2qIlw3p8hS2PTqVtbSZhltKm53PpyGW8RCCzulPrSXg9OwDKwnueI5X4oUFqglPllzQdpQa/Q7J/DFhilfu2XZTB21kHbl9J1jWPVifuErdO0EsQtpaePN3DagyGY8/gW+IL962M/oLFh4qGnLA8HIXE7Y+ii/p+KjrcwuhDeAmIRHpyEZ/mXvF26vkPy7xVJYY2K7poSwcNAhCa9xNdGgc7iHEdgQFrM0m9q0cjIPPug1AgXLl3bAp3mSFOsyBxAWbkh331UOreAVaQvdW87TkogR0s4s2igIA+Wur2wtmdrWYPpoW17O7g975bJyxnwdteA+4K04EERAG1ZhkNuNVaKjpA8vi5j0beUXkvvR2zIALpyQUoCeziPhLk7QzA9lANWEDmLeag3lMBsitC+oLkACPE7QGHoFfiFBstShFZAfOWGTEsOD9fACQm1fuKRoAqXBulfm3e3BTA4E2A6QksDAsAe3GRng4BHG8FJwImTaNETCbi9weUiyTH7uREEPnjK+o1i+lxVdASijnTbtY7HV74IlQM4VTMSC7Gxh/l7t/2aclFvOtTZ8QIRRQwZAjHzSeFIyHEx95Y59EMmMfDXAB+neazDo6/SbCFGDcfoR34uVH8FtzVpJRVgi18QryqwT63fJ/eM5BtcAGoKAziLBCBdAQscaAp1z53zTqv+rxeoIJc/QYBGdByzW3JozcA9jRqMzxYVg9d1fqrTqKILjCA/Jfvix7qu0V0GP4LMucCzaEhveDiUbXtr0cRFkWJdsLMhLrwyverArS4jqN/ABsBRfSy4qMX8gE+0M2KdywPQSFg6o9JhBWOEVboj4lOSIjl/2sWdNJ3vj+nMqinJzpMiGcIWt1UGqm8DmUK29bAP/SV6+PMecYlAAAAAElFTkSuQmCC"
   },
-  "description": "Integracja z webePartners",
+  "description": "Integration with webePartners",
   "containerContexts": [
     "WEB"
   ]
@@ -33,9 +33,9 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "mid",
-    "displayName": "Numer MID",
+    "displayName": "MID",
     "simpleValueType": true,
-    "help": "Twój numer MID nadany przez opiekuna konta",
+    "help": "Your MID number assigned by the account manager.",
     "valueValidators": [
       {
         "type": "NON_EMPTY"
@@ -45,9 +45,9 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "refer",
-    "displayName": "Numer zamówienia",
+    "displayName": "Order Id",
     "simpleValueType": true,
-    "help": "Unikalny identyfikator zamówienia",
+    "help": "Unique order identifier.",
     "valueValidators": [
       {
         "type": "NON_EMPTY"
@@ -57,9 +57,9 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "sum",
-    "displayName": "Wartość zamówienia",
+    "displayName": "Order value",
     "simpleValueType": true,
-    "help": "Wartość brutto zamówienia bez kosztów wysyłki",
+    "help": "Gross (Brutto) order value excluding shipping costs.",
     "valueValidators": [
       {
         "type": "NON_EMPTY"
@@ -69,9 +69,9 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "dc",
-    "displayName": "Kod rabatowy",
+    "displayName": "Discount code",
     "simpleValueType": true,
-    "help": "Kod rabatowy wykorzystany przy zamówieniu"
+    "help": "Discount code used for the order."
   }
 ]
 
@@ -205,6 +205,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 5/16/2025, 11:42:53 AM
+Created on 5/16/2025, 11:56:05 AM
 
 
